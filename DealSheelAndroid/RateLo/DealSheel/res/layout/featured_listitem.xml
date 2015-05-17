@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+         <ImageView
+        android:id="@+id/img_featured_image"
+        android:layout_width="@dimen/gridview_image"
+        android:layout_height="@dimen/gridview_image"
+        android:src="@drawable/samsung_img" />
+
+    <TextView
+        android:id="@+id/tv_featured_itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp" />
+    
+    </LinearLayout>
+
+   
+
+</LinearLayout>

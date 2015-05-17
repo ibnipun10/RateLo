@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" 
+    android:background="@android:color/darker_gray">
+ <SeekBar 
+     android:id="@+id/sb_filter"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"     
+     />   
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:paddingStart="5dp"
+         android:paddingEnd="5dp"         
+         >
+     <TextView 
+         android:id="@+id/tv_min_val"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Min"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:textColor="@android:color/white"/>
+     
+     <TextView 
+         android:id="@+id/tv_curr_val"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Current"
+         android:layout_centerInParent="true"
+         android:textColor="@android:color/white"/>
+     
+     
+     <TextView 
+         android:id="@+id/tv_max_val"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Max"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:textColor="@android:color/white"/>
+     </RelativeLayout>
+
+</LinearLayout>

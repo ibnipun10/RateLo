@@ -1,0 +1,5 @@
+Rest api list
+
+//Get items by id
+http://localhost:8091/DealSheelAppServer/api/?id
+

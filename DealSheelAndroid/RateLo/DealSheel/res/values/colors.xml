@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray_background">#463e3f</color>
+    <color name="maincat_background">#303030</color>
+    <color name="subcat_background">#555555</color>
+    <color name="listitem_pressed_color">#555555</color>
+    <color name="listitem_focused_color">#555555</color>
+
+</resources>

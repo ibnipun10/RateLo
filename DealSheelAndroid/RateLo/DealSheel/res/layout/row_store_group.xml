@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_storegroup"
+        android:layout_width="@dimen/storelist_imagewidth"
+        android:layout_height="@dimen/storelist_imageheight"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/samsung_img" />
+
+    <TextView
+        android:id="@+id/tv_store_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Store Name"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_store_group_branch_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_store_group_name"
+        android:layout_below="@id/tv_store_group_name"
+        android:text="No of Branches"
+        android:textSize="16sp" />
+
+</RelativeLayout>

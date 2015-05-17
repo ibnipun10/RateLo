@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"         
+        android:background="@drawable/header_bck"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_filtercategory_left"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/left_hdrsymbol" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.17"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/lnv_filtercategory_searchbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+            
+            <TextView
+                android:id="@+id/tv_filtercategory_maincat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DealSheel"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+             <TextView
+                android:id="@+id/tv_filtercategory_subcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="DealSheel" />
+            
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/img_filtercategory_downarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                
+                android:src="@drawable/up_arrow" />
+
+            <LinearLayout
+            android:id="@+id/lnv_searchbar_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.15"
+            android:visibility="gone"            
+            android:orientation="horizontal" >
+            
+            <EditText
+                android:id="@+id/ed_filtercategory_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:hint="Search here"
+                android:background="@android:color/transparent"
+                android:layout_weight="1" >
+
+            </EditText>
+            
+             <Button
+                    android:id="@+id/btn_search_cleartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cross_1421512692519" />
+             
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/img_filtercategory_searchbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:src="@drawable/search" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center" >
+
+            
+            <ImageView
+                android:id="@+id/img_filtercategory_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"                
+                android:src="@drawable/search" 
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/img_filtercategory_filter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/filter_symbol" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+        
+            <ListView
+            android:id="@+id/lv_filtercategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false" >
+        </ListView>
+        
+            <TextView
+              android:id="@+id/emptyview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="No search items"
+              android:visibility="gone"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+</LinearLayout>
