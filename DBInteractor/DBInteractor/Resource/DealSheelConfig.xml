@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<DealSheel>
+  <!--
+  <AppServer Server="ec2-54-68-62-158.us-west-2.compute.amazonaws.com" Port="8080" />
+  <DatabaseServer Server="ec2-54-68-62-158.us-west-2.compute.amazonaws.com" Port="7474" /> -->
+<AppServer Server="localhost" Port="8080" />
+  <DatabaseServer Server="localhost" Port="7474" />
+</DealSheel>
+	

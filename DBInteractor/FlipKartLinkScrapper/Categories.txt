@@ -1,0 +1,7 @@
+﻿cameras
+laptops
+air_conditioners
+refrigerator
+microwave_ovens
+washing_machine
+televisions

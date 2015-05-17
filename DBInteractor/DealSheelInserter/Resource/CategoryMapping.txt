@@ -1,0 +1,7 @@
+﻿1001 televisions
+1002 cameras
+1003 laptops
+2001 air_conditioners
+2002 refrigerator
+2003 microwave_ovens
+2004 washing_machine 
