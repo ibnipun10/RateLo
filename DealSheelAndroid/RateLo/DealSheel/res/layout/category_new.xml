@@ -1,0 +1,36 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <RelativeLayout
+        android:id="@+id/left_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#6060e9">
+        
+        <include
+	        android:id="@+id/leftpanel_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        layout="@layout/leftpanel" />
+                
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       	
+       	<include
+	        android:id="@+id/featured_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        layout="@layout/category" />
+       	        
+    </RelativeLayout>
+   
+</android.support.v4.widget.SlidingPaneLayout>
